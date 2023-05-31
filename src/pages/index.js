@@ -1,12 +1,10 @@
 import * as React from "react"
 //import { Link, graphql } from "gatsby"
 //import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-import { Container } from "react-bootstrap";
 
 const IndexPage = () => {
 

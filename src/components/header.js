@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}
   >
+    
     <Link
       to="/"
       style={{
@@ -21,7 +22,12 @@ const Header = ({ siteTitle }) => (
     >
      
       <img src={SkygravityHeader} alt="Skygravity records"/> 
+     
     </Link>
+
+   
+     
+
   </header>
 )
 

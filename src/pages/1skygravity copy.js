@@ -4,34 +4,37 @@ import { StaticImage} from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+
 import { Container } from "react-bootstrap";
+
 
 
 const skygravityPage = () => (
   <Layout>
-           
-     <p className={styles.nameRelease} >SKYGRAVITY</p>      
+       
+           <p className={styles.nameRelease} >SKYGRAVITY</p>      
          
     <div className={styles.main}>
-            <div>
-               <Container>             
-                   <iframe className={styles.framebandcamp} title="Bancamp music" src="https://bandcamp.com/EmbeddedPlayer/album=660142136/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://skygravityrecords.bandcamp.com/album/skygravity">Skygravity by Skygravity records</a></iframe>
-               </Container>              
-            </div>
-
+     <div className={styles.textCenter}>
+                       
+        <Container>      
+               <iframe className={styles.framebandcamp} title="Bancamp music" src="https://bandcamp.com/EmbeddedPlayer/album=660142136/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://skygravityrecords.bandcamp.com/album/skygravity">Skygravity by Skygravity records</a></iframe>
+        </Container>
+                        
+         {/*  style="border: 0; width: 400px; height: 472px;" */}
+         </div>
          <div className={styles.sidebar}>
-         <StaticImage
-                 placeholder="blurred"
-                 src="../images/skygravity.jpg"
-                 width={500}
-                 quality={80}
-                 formats={["AUTO","WEBP","AVIF"]}
-                alt="A gatsby strinaut"
-                style={{margin: '0px'}}
-                />  <br/>
-       
 
-          <span className={styles.descriptionTxt}>
+         <StaticImage
+         placeholder="blurred"
+         src="../images/skygravity.jpg"
+         width={500}
+         quality={80}
+         formats={["AUTO","WEBP","AVIF"]}
+         alt="A gatsby strinaut"
+         style={{margin: '0px'}}
+         />  <br/>
+          <p className={styles.descriptionTxt}>
       Skygravity – the first psychedelic trance compilation of Ukrainian electronic music scene.
 Every year, in July at the Crimean coast of Black sea in Ukraine we arrange “Sky Gravity” festival – 
 the most bright, colorful and dynamic musical event of the year, which attracts psymusic-lovers from the whole country and foreign guests as well.
@@ -44,22 +47,25 @@ The most of the projects in this compilation have been never released before. Sk
 of new advanced directions of trance music.
 We are thankful for your choice to buy licensed CD and for the great support of our young label. 
 Have a pleasant listening and true emotions:<br/> let’s meet at “Sky Gravity” dancefloor!
-</span>
+</p>
 <br/><br/>
 Artwork by Kadasarva<br/>
 Mastering by Dmitriy Volkov<br/>
 Compiled by Orbal & Jet<br/>
 Released July 15, 2006<br/>
+          
 
           </div> 
-          
      </div> 
  
+
 <div className={styles.textCenter}>
 <Link to="/">Go back to the homepage</Link>
 </div>
 
-    
+  
+
+   
   </Layout>
 )
 

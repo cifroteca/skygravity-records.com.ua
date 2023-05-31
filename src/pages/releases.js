@@ -42,10 +42,10 @@ const ReleasesPage = () => (
          style={{margin: '15px'}}
          /> 
 
-        <Link to="/"> 
+        <Link to="/solarsystem/"> 
         <StaticImage
          placeholder="blurred"
-         src="../images/skygravity.jpg"
+         src="../images/solarsystem.jpg"
          width={300}
          quality={80}
          formats={["AUTO","WEBP","AVIF"]}

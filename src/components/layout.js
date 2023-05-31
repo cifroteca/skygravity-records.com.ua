@@ -1,15 +1,15 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Facebooklink from '../images/fb_icon_325x325.png'
+import bandcamp from '../images/bandcamp.jpg'
+import soundcloud from '../images/soundcloud.png'
+import youtubelink from '../images/youtube.png'
+import * as styles from "../components/index.module.css"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,12 +37,34 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            textAlign: "right",
           }}
         >
-          © {new Date().getFullYear()} &middot; Skygravity records
-          {` `}
-          <a href="https://www.facebook.com/skygravityrecords">Facebook</a>
+             <Link to="https://skygravityrecords.bandcamp.com/" >
+              <img className={styles.footerpiclink} src={bandcamp} alt="Bandcamp Skygravity records"/> 
+            </Link>
+            <Link to="https://soundcloud.com/skygravityrecords" >
+              <img className={styles.footerpiclink} src={soundcloud} alt="Sound Cloud Skygravity records"/> 
+            </Link>
+            
+            <Link to="https://www.facebook.com/skygravityrecords" >
+              <img className={styles.footerpiclink} src={Facebooklink} alt="Facebook Skygravity records"/> 
+            </Link>
+            <Link to="https://www.youtube.com/@skygravityrecords" >
+              <img className={styles.footerpiclink} src={youtubelink} alt="Youtube Skygravity records"/> 
+            </Link>
+            <br/>
+
+          
+          {`   `}
+        {/*   <a href="https://www.facebook.com/skygravityrecords">Facebook</a> */}           
+        <br/>
+                    
+
         </footer>
+          <div className={styles.textCenter}>
+            © {new Date().getFullYear()} &middot; Skygravity records
+          </div>
       </div>
     </>
   )

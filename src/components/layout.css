@@ -43,6 +43,7 @@ body {
   margin: 0;
   word-wrap: break-word;
 }
+
 a {
   background-color:transparent; 
   color: var(--color-primary);
@@ -223,10 +224,10 @@ pre tt:after {
   content: none;
 }
 
-musicrelease {
+/* musicrelease {
   padding-bottom: 2.25em;
   padding-top: 2.25em;
-}
+} */
 
 /* style="
             display: flex;
