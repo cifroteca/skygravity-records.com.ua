@@ -6,10 +6,8 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import { Container } from "react-bootstrap";
 
-
 const skygravityPage = () => (
-  <Layout>
-           
+  <Layout>          
      <p className={styles.nameRelease} >SKYGRAVITY</p>      
          
     <div className={styles.main}>
@@ -56,7 +54,7 @@ Released July 15, 2006<br/>
      </div> 
  
 <div className={styles.textCenter}>
-<Link to="/">Go back to the homepage</Link>
+<Link to="/releases/">Go back</Link>
 </div>
 
     

@@ -20,12 +20,9 @@ const Header = ({ siteTitle }) => (
         textDecoration: `none`,
       }}
     >
-     
       <img src={SkygravityHeader} alt="Skygravity records"/> 
      
-    </Link>
-
-   
+    </Link> 
      
 
   </header>

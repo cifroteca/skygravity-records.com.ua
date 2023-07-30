@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const aboutPage = () => (
   <Layout>
-        <div className={styles.about_content}>
+        <div className={styles.textCenter}>
     <h1 className={styles.nameRelease}>Skygravity Records</h1>
     <p className={styles.aboutTxt}>Skygravity Records independent record label specializing in psychedelic trance music. <br/>
     The name of the label comes from the name of the Skygravity festival <br/>
@@ -24,7 +24,7 @@ Contact: skygravityrec@gmail.com
     </div>
 
     <div className={styles.textCenter}>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Go back</Link>
     </div>
 
 

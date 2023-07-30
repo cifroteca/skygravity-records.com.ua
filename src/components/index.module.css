@@ -19,34 +19,71 @@
 
 .main {
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;    
   }
-  display: block;
-  display: flex;
- /*  gap: 20px; */
- flex-direction: row-reverse;  
-  width: 1130px;
-  margin:0 auto;
+    display: block;
+    display: flex;
+    gap: 20px; 
+    flex-direction: row-reverse;  
+    width: 1130px; 
+    margin:0 auto;
  }
  
 
 .main1 {
+  @media (max-width: 800px) {
+    flex-direction: column;
+    }
+  display: block;
+  display: flex; 
+  gap: 10px; 
+
   display: flex;
-    gap: 20px; 
-   flex-direction: row-reverse; 
- /*  width:1130px;  */
-  margin:0 auto;
-  
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;  
+  margin:0 auto;  
+}
+
+.main2 {
+  @media (max-width: 800px) {
+    flex-direction: column;
+    }
+    display: block;
+    display: flex; 
+    gap: 10px; 
+ 
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin:0 auto;  
 }
 
 .main_content {
+  
   display: flex;
   background-color: #FFFFFF;
   /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   padding: 5px 5x; */
 }
 
+.container {
+background-color:black ;
+height:75vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.organization {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FB6D3A;
+}
 
 
 .sidebar {
@@ -55,11 +92,60 @@
   width: 500px;
 }
 
+.sidebarbio {
+  background-color:#ffffff;
+  padding-left: 1px;
+  width: 1000px;
+}
+
+
+.CarouselGlobalSize {
+  variant: "dark";
+  text-align: center;
+  width: 500px;
+  text-align: center; 
+  margin:0 auto;
+  
+}
+
+.Carouselsize {
+  display: d-block; 
+  width: 10px;   
+}
+
+.CarouselPicsize {
+  display: block;
+  display: flex; 
+  text-align: center;   
+}
+
+.MultyCarouselsize {
+   opacity: 1;
+   text-align: center; 
+   width: 250px;
+   padding-left: 10px;    
+}
+
 .framebandcamp
 { 
   border: 0; 
   width: 550px; 
   height: 495px;
+}
+
+.framesoundcloud
+{ 
+  
+  height: 130px;
+  width: 600px; 
+  border: 0; 
+  margin-top: 10px;
+/*   scrolling "no"; 
+  frameborder="no"; 
+  allow="autoplay"; 
+  target: _blank; 
+  color: #cccccc; 
+  text-decoration: none;*/
 }
 
 .nameRelease {
@@ -71,28 +157,73 @@
   color: #033b3e;
   margin-bottom: 20px;
   margin-left: 40px;
+}
 
+.nameNews {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 32px;
+  /* line-height: 27px; */
+  color: #033b3e;
+
+}
+
+.nameArtist {
+  
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #035c5f;
+  
 }
 
 .footerpiclink {
   align-content:  center;  
-  width: 40px; 
-  height: 40px;
+  width: 45px; 
+  height: 45px;
   background-color: #FFFFFF;
  /*  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); */
   /* padding: 3px 3px;  */
-   margin: 15px;
+   margin: 15px; 
+}
+
+.artistpiclink {
+  align-content:  center;  
+  width: 90px; 
+  height: 90px;
+  background-color: #FFFFFF;
+ /*  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); */
+  /* padding: 3px 3px;  */
+  margin-top : 20px;
+   margin-left : 28px;
  
+}
+
+.descriptionMainTxt {
+  font-style: normal;
+  width: 420px; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #012621;
+  padding-top: 20px;
 }
 
 .descriptionTxt {
   font-style: normal;
-  font-weight: 500;
+  width: 420px; 
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: #012621;
   padding-top: 20px;
 }
+
+
+
 
 
 .about_content {
@@ -103,7 +234,6 @@
 
 }
   .aboutTxt {
-    width:1200px;
     text-align: center;
     font-style: normal;
     font-weight: 500;
@@ -111,7 +241,7 @@
     line-height: 20px;
     color: #000202;
     padding-top: 20px;
-    padding-left: 400px;
+    
   }
   
 

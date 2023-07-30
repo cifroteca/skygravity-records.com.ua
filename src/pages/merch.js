@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const SecondPage = () => (
+const MerchPage = () => (
   <Layout>
     <h1>Hi from the Merch</h1>
     <p>Welcome to Merch</p>
@@ -14,4 +14,4 @@ const SecondPage = () => (
 
 export const Head = () => <Seo title="Page two" />
 
-export default SecondPage
+export default MerchPage

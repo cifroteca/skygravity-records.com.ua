@@ -4,15 +4,10 @@ import { StaticImage} from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-
-
 import { Container } from "react-bootstrap";
 
-
-
 const solarsystemPage = () => (
-  <Layout>
-       
+  <Layout>           
            <p className={styles.nameRelease} >Skygravity Vol.2 - Solar System</p>      
          
     <div className={styles.main}>
@@ -61,7 +56,7 @@ Cover by 604 Design    <br/>
  
 
 <div className={styles.textCenter}>
-<Link to="/releases/">Go back to Releases page</Link>
+<Link to="/releases/">Go back</Link>
 </div>
 
   
