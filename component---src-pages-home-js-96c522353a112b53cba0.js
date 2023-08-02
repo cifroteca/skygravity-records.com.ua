@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkskygravity_records=self.webpackChunkskygravity_records||[]).push([[79],{8725:function(e,t,a){a.r(t),a.d(t,{Head:function(){return i}});var r=a(7294),c=a(1883),n=a(986),l=a(9357),s=a(2264),u=a(3809);const i=()=>r.createElement(l.Z,{title:"Home Page"});t.default=()=>r.createElement(n.Z,null,r.createElement("p",{className:s.Wq},"Skygravity records"),r.createElement(u.Z,null),r.createElement("div",{className:s.xf},r.createElement(c.Link,{to:"/"},"Go back ")))}}]);
+//# sourceMappingURL=component---src-pages-home-js-96c522353a112b53cba0.js.map
