@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkskygravity_records=self.webpackChunkskygravity_records||[]).push([[494],{4835:function(e,t,r){r.r(t),r.d(t,{Head:function(){return o}});var c=r(7294),n=r(1883),l=r(986),a=r(9357);const o=()=>c.createElement(a.Z,{title:"Page two"});t.default=()=>c.createElement(l.Z,null,c.createElement("h1",null,"Hi from the Merch"),c.createElement("p",null,"Welcome to Merch"),c.createElement(n.Link,{to:"/"},"Go back to the homepage"))}}]);
+//# sourceMappingURL=component---src-pages-merch-js-ae91f5761f71e3e9f986.js.map
