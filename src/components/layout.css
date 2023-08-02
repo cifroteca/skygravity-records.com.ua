@@ -18,8 +18,8 @@
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
-  --space-4: 5px;
-  --space-5: 5px;
+  --space-4: 0 px;
+  --space-5: 0 px;
   --space-6: 64px;
   --size-content: 100rem;
   --size-gutter: var(--space-5);
