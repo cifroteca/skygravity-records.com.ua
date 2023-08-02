@@ -11,10 +11,10 @@ import encodedImg from '../images/encodedtraces.jpg';
 import nyonsImg from '../images/nyonshavingfun.jpg';
 import cifrotecaImg from '../images/cifroteca.jpg';
 import plurImg from '../images/plur.jpg';
-import * as styles from "../components/index.module.css";
 import { Link  } from "gatsby";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import * as styles from "../components/index.module.css";
 
 
 export default class MultyCarouselBox extends Component {     

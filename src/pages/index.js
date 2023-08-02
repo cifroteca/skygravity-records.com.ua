@@ -3,9 +3,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 import MultyCarouselBox from "../components/MultyCarouselBox";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import * as styles from "../components/index.module.css"
 
 
 const IndexPage = () => {

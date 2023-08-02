@@ -1,10 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-
-
 import Header from "./header"
-import "./layout.css"
 import Facebooklink from '../images/logo/fb.png'
 import bandcamp from '../images/logo/bandcamp.jpg'
 import soundcloud from '../images/logo/soundcloud.png'
@@ -15,6 +12,7 @@ import discogs from '../images/logo/discogs.png'
 import beatport from '../images/logo/beatport.png'
 import patreon from '../images/logo/patreon.png'
 import mixcloud from '../images/logo/mixcloud.png'
+import "./layout.css"
 import * as styles from "../components/index.module.css"
 
 

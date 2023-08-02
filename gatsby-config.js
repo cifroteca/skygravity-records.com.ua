@@ -8,6 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/skygravity-records.com.ua",
   siteMetadata: {
     title: `Skygravity Records`,
     description: `Independent Psychedelic Trance Label from Ukraine`,
@@ -24,6 +25,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+ /*      {
+    resolve: `gatsby-plugin-sass`,
+    options: {
+      cssLoaderOptions: {
+        camelCase: false,
+        implementation: require('node-sass'),
+      },
+      },  
+    }, */
+
     {
       resolve: `gatsby-remark-embed-snippet`,
       options: {

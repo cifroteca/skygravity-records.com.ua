@@ -10,6 +10,7 @@
     "gatsby": "^5.8.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.8.0",
+    "gatsby-plugin-sass": "^6.11.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-remark-embed-snippet": "^8.10.0",
     "gatsby-remark-prismjs": "^7.10.0",
@@ -23,10 +24,12 @@
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.4",
     "react-simple-image-slider": "^2.4.1",
+    "sass": "^1.64.2",
     "sharp": "^0.32.4"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^2.8.7"
   },
   "keywords": [
@@ -34,6 +37,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
