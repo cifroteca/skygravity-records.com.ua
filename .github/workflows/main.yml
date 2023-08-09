@@ -12,6 +12,7 @@
     host: ${{ secrets.FTP_HOST }}
     username: ${{ secrets.FTP_USERNAME }}
     password: ${{ secrets.FTP_PASSWORD }}
+    server-dir: ${{ secrets.FTP_PATH }}
     command: |
       curl -sS https://getcomposer.org/installer | /usr/bin/php7.4 -cli
       /usr/bin/php7.4 -cli composer.phar update
