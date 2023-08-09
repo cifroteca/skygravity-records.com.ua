@@ -1,17 +1,16 @@
-- name: cifroteca
-  uses: SamKirkland/FTP-Deploy-Action@3.1.1
-  with:
-    ftp-server: sftp://${{ secrets.FTP_HOST }}
-    ftp-username: ${{ secrets.FTP_USERNAME }}
-    ftp-password: ${{ secrets.FTP_PASSWORD }}
-    git-ftp-args: --insecure
-
-- name: 📽 Commande SSH de 1&1 by Ionos
-  uses: garygrossgarten/github-action-ssh@release
-  with:
-    host: ${{ secrets.FTP_HOST }}
-    username: ${{ secrets.FTP_USERNAME }}
-    password: ${{ secrets.FTP_PASSWORD }}
-    command: |
-      curl -sS https://getcomposer.org/installer | /usr/bin/php7.4 -cli
-      /usr/bin/php7.4 -cli composer.phar update
+name: FTP deploy on push
+on: push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.REMOTE_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ${{ secrets.FTP_PATH }}
