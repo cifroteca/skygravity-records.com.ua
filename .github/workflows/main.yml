@@ -1,4 +1,4 @@
-- name: 📂 Synchronisation des fichiers
+- name: Synchronisation des fichiers
   uses: SamKirkland/FTP-Deploy-Action@3.1.1
   with:
     ftp-server: sftp://${{ secrets.FTP_HOST }}
